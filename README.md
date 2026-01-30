@@ -18,7 +18,7 @@ cd kafka-article-4
 ```
 2. Поднять контейнеры
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 3. Выполнить SQL-скрипты в папке `sql-scripts`
 4. Запустить микросервисы (при желании можно запускать консьюмеров в нескольких инстансах)
@@ -30,9 +30,9 @@ cd inventory-service
 ./mvnw spring-boot:run
 
 cd notification-service
-./mvnw spring-boot:run -Dserver.port=8081
+./mvnw spring-boot:run
 
 cd analytics-service
-./mvnw spring-boot:run -Dserver.port=8082
+./mvnw spring-boot:run
 ```
 5. Развлекаться
